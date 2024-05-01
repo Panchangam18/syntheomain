@@ -1,5 +1,6 @@
 import { Row, Col } from "antd";
 import { Fade } from "react-awesome-reveal";
+import { useHistory } from 'react-router-dom';  // Import useHistory
 import { withTranslation } from "react-i18next";
 
 import { ContentBlockProps } from "./types";
@@ -26,11 +27,10 @@ const ContentBlock = ({
   id,
   direction,
 }: ContentBlockProps) => {
-  const scrollTo = (id: string) => {
-    const element = document.getElementById(id) as HTMLDivElement;
-    element.scrollIntoView({
-      behavior: "smooth",
-    });
+  const history = useHistory();  // Initialize useHistory
+
+  const handleNavigation = (path: string) => {
+    history.push(path);
   };
 
   return (
@@ -49,57 +49,18 @@ const ContentBlock = ({
             <ContentWrapper>
               <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
-              {direction === "right" ? (
+              {direction === "right" && (
                 <ButtonWrapper>
-                  {typeof button === "object" &&
-                    button.map(
-                      (
-                        item: {
-                          color?: string;
-                          title: string;
-                        },
-                        id: number
-                      ) => {
-                        return (
-                          <Button
-                            key={id}
-                            color={item.color}
-                            onClick={() => scrollTo("about")}
-                          >
-                            {t(item.title)}
-                          </Button>
-                        );
-                      }
-                    )}
+                  {button && button.map((item, index) => (
+                    <Button
+                      key={index}
+                      color={item.color}
+                      onClick={() => handleNavigation('/new-page')}  // Update navigation path
+                    >
+                      {t(item.title)}
+                    </Button>
+                  ))}
                 </ButtonWrapper>
-              ) : (
-                <ServiceWrapper>
-                  <Row justify="space-between">
-                    {typeof section === "object" &&
-                      section.map(
-                        (
-                          item: {
-                            title: string;
-                            content: string;
-                            icon: string;
-                          },
-                          id: number
-                        ) => {
-                          return (
-                            <Col key={id} span={11}>
-                              <SvgIcon
-                                src={item.icon}
-                                width="60px"
-                                height="60px"
-                              />
-                              <MinTitle>{t(item.title)}</MinTitle>
-                              <MinPara>{t(item.content)}</MinPara>
-                            </Col>
-                          );
-                        }
-                      )}
-                  </Row>
-                </ServiceWrapper>
               )}
             </ContentWrapper>
           </Col>
