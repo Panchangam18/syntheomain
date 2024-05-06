@@ -4,8 +4,12 @@ import React from 'react';
 const NewPage = () => {
   return (
     <div>
-      <h1>New Page</h1>
-      <p>This is a new page.</p>
+      <iframe
+        src="https://rishimeda-geminichatbot.hf.space"
+        frameborder="0"
+        width="1500"
+        height="768"
+      ></iframe>
     </div>
   );
 };
