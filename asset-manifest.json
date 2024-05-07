@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/syntheomain/static/css/main.18dfb25f.css",
-    "main.js": "/syntheomain/static/js/main.69c32f6f.js",
+    "main.js": "/syntheomain/static/js/main.ae1191e4.js",
     "static/js/382.5ffe8628.chunk.js": "/syntheomain/static/js/382.5ffe8628.chunk.js",
     "static/js/104.5c09c6f1.chunk.js": "/syntheomain/static/js/104.5c09c6f1.chunk.js",
     "static/js/281.9caafac4.chunk.js": "/syntheomain/static/js/281.9caafac4.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/758.df18b2ed.chunk.js": "/syntheomain/static/js/758.df18b2ed.chunk.js",
     "index.html": "/syntheomain/index.html",
     "main.18dfb25f.css.map": "/syntheomain/static/css/main.18dfb25f.css.map",
-    "main.69c32f6f.js.map": "/syntheomain/static/js/main.69c32f6f.js.map",
+    "main.ae1191e4.js.map": "/syntheomain/static/js/main.ae1191e4.js.map",
     "382.5ffe8628.chunk.js.map": "/syntheomain/static/js/382.5ffe8628.chunk.js.map",
     "104.5c09c6f1.chunk.js.map": "/syntheomain/static/js/104.5c09c6f1.chunk.js.map",
     "281.9caafac4.chunk.js.map": "/syntheomain/static/js/281.9caafac4.chunk.js.map",
@@ -20,6 +20,6 @@
   },
   "entrypoints": [
     "static/css/main.18dfb25f.css",
-    "static/js/main.69c32f6f.js"
+    "static/js/main.ae1191e4.js"
   ]
 }
