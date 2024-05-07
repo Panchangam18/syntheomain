@@ -5,7 +5,7 @@ const routes = [
     component: "Home",
   },
   {
-    path: "/new-page",
+    path: "/use-syntheo",
     exact: true,
     component: "NewPage",
   },

@@ -5,7 +5,7 @@ import { withTranslation } from "react-i18next";
 
 import { ContentBlockProps } from "./types";
 import { Button } from "../../common/Button";
-import { SvgIcon } from "../../common/SvgIcon";
+import  JpegIcon  from "../../common/JpegIcon";
 import {
   ContentSection,
   Content,
@@ -43,7 +43,7 @@ const ContentBlock = ({
           direction={direction}
         >
           <Col lg={11} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
+            <JpegIcon src={icon} width="100%" height="100%" />
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
@@ -55,7 +55,7 @@ const ContentBlock = ({
                     <Button
                       key={index}
                       color={item.color}
-                      onClick={() => handleNavigation('/new-page')}  // Update navigation path
+                      onClick={() => handleNavigation('/use-syntheo')}  // Update navigation path
                     >
                       {t(item.title)}
                     </Button>

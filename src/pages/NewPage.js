@@ -5,7 +5,7 @@ const NewPage = () => {
   return (
     <div>
       <iframe
-        src="https://rishimeda-geminichatbot.hf.space"
+        src="https://databrickscomp-databricksbackendspace.hf.space"
         frameborder="0"
         width="1500"
         height="768"
