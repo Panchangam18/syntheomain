@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_app=self.webpackChunkmy_app||[]).push([[104],{7104:function(a,e,c){c.r(e);c(2791);var r=c(184);e.default=function(){return(0,r.jsx)("div",{children:(0,r.jsx)("iframe",{src:"https://databrickscomp-databricksbackendspace.hf.space",frameborder:"0",width:"1500",height:"768"})})}}}]);
+//# sourceMappingURL=104.5c09c6f1.chunk.js.map
