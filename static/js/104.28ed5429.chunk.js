@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_app=self.webpackChunkmy_app||[]).push([[104],{7104:function(e,i,r){r.r(i);r(2791);var t=r(184);i.default=function(){return(0,t.jsx)("div",{children:(0,t.jsx)("iframe",{src:"https://rishimeda-geminichatbot.hf.space",frameborder:"0",width:"1500",height:"768"})})}}}]);
+//# sourceMappingURL=104.28ed5429.chunk.js.map
